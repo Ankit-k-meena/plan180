@@ -1,0 +1,37 @@
+Goal,Month,Month_Number,Milestone,Target_Progress,Actual_Progress,Status,Days_Remaining
+Data Science,Month 1,1,Data Science - Month 1 Milestone,16.67,11,In Progress,0
+Data Science,Month 2,2,Data Science - Month 2 Milestone,33.34,0,Not Started,30
+Data Science,Month 3,3,Data Science - Month 3 Milestone,50.010000000000005,0,Not Started,60
+Data Science,Month 4,4,Data Science - Month 4 Milestone,66.68,0,Not Started,90
+Data Science,Month 5,5,Data Science - Month 5 Milestone,83.35000000000001,0,Not Started,120
+Data Science,Month 6,6,Data Science - Month 6 Milestone,100.02000000000001,0,Not Started,150
+Bank Exam,Month 1,1,Bank Exam - Month 1 Milestone,16.67,12,In Progress,0
+Bank Exam,Month 2,2,Bank Exam - Month 2 Milestone,33.34,0,Not Started,30
+Bank Exam,Month 3,3,Bank Exam - Month 3 Milestone,50.010000000000005,0,Not Started,60
+Bank Exam,Month 4,4,Bank Exam - Month 4 Milestone,66.68,0,Not Started,90
+Bank Exam,Month 5,5,Bank Exam - Month 5 Milestone,83.35000000000001,0,Not Started,120
+Bank Exam,Month 6,6,Bank Exam - Month 6 Milestone,100.02000000000001,0,Not Started,150
+YouTube,Month 1,1,YouTube - Month 1 Milestone,16.67,5,In Progress,0
+YouTube,Month 2,2,YouTube - Month 2 Milestone,33.34,0,Not Started,30
+YouTube,Month 3,3,YouTube - Month 3 Milestone,50.010000000000005,0,Not Started,60
+YouTube,Month 4,4,YouTube - Month 4 Milestone,66.68,0,Not Started,90
+YouTube,Month 5,5,YouTube - Month 5 Milestone,83.35000000000001,0,Not Started,120
+YouTube,Month 6,6,YouTube - Month 6 Milestone,100.02000000000001,0,Not Started,150
+Health & Fitness,Month 1,1,Health & Fitness - Month 1 Milestone,16.67,17,In Progress,0
+Health & Fitness,Month 2,2,Health & Fitness - Month 2 Milestone,33.34,0,Not Started,30
+Health & Fitness,Month 3,3,Health & Fitness - Month 3 Milestone,50.010000000000005,0,Not Started,60
+Health & Fitness,Month 4,4,Health & Fitness - Month 4 Milestone,66.68,0,Not Started,90
+Health & Fitness,Month 5,5,Health & Fitness - Month 5 Milestone,83.35000000000001,0,Not Started,120
+Health & Fitness,Month 6,6,Health & Fitness - Month 6 Milestone,100.02000000000001,0,Not Started,150
+Confidence,Month 1,1,Confidence - Month 1 Milestone,16.67,17,In Progress,0
+Confidence,Month 2,2,Confidence - Month 2 Milestone,33.34,0,Not Started,30
+Confidence,Month 3,3,Confidence - Month 3 Milestone,50.010000000000005,0,Not Started,60
+Confidence,Month 4,4,Confidence - Month 4 Milestone,66.68,0,Not Started,90
+Confidence,Month 5,5,Confidence - Month 5 Milestone,83.35000000000001,0,Not Started,120
+Confidence,Month 6,6,Confidence - Month 6 Milestone,100.02000000000001,0,Not Started,150
+MMA,Month 1,1,MMA - Month 1 Milestone,16.67,10,In Progress,0
+MMA,Month 2,2,MMA - Month 2 Milestone,33.34,0,Not Started,30
+MMA,Month 3,3,MMA - Month 3 Milestone,50.010000000000005,0,Not Started,60
+MMA,Month 4,4,MMA - Month 4 Milestone,66.68,0,Not Started,90
+MMA,Month 5,5,MMA - Month 5 Milestone,83.35000000000001,0,Not Started,120
+MMA,Month 6,6,MMA - Month 6 Milestone,100.02000000000001,0,Not Started,150

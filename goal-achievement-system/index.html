@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Achievement System - Transform Your Life in 6 Months</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <h1 class="header-title">Goal Achievement System</h1>
+                        <p class="header-date" id="currentDate"></p>
+                    </div>
+                    <div class="header-right">
+                        <button id="themeToggle" class="btn btn--secondary btn--sm">🌙 Dark</button>
+                        <div class="motivational-quote">
+                            <p id="motivationalQuote">"Success is the sum of small efforts repeated day in and day out."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="main">
+            <div class="container">
+                <!-- Overall Progress -->
+                <section class="overall-progress">
+                    <div class="overall-progress-card">
+                        <h2>Overall Progress</h2>
+                        <div class="progress-ring-container">
+                            <div class="progress-ring" id="overallProgressRing">
+                                <div class="progress-ring-text">
+                                    <span class="progress-percentage" id="overallPercentage">0%</span>
+                                    <span class="progress-label">Complete</span>
+                                </div>
+                            </div>
+                            <div class="progress-stats">
+                                <div class="stat">
+                                    <span class="stat-value" id="daysRemaining">150</span>
+                                    <span class="stat-label">Days Left</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value" id="goalsOnTrack">4</span>
+                                    <span class="stat-label">On Track</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Goal Cards -->
+                <section class="goals-grid">
+                    <div class="goal-card" data-goal="data_science">
+                        <div class="goal-header">
+                            <h3>Data Science Learning</h3>
+                            <span class="status status--warning">In Progress</span>
+                        </div>
+                        <div class="goal-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 15%"></div>
+                            </div>
+                            <span class="progress-text">15%</span>
+                        </div>
+                        <div class="goal-details">
+                            <p>Master data science for freelance work</p>
+                            <div class="goal-stats">
+                                <span>Target: 2.5h/day</span>
+                                <span>Current Milestone: Python Basics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card" data-goal="bank_exam">
+                        <div class="goal-header">
+                            <h3>Bank Exam Preparation</h3>
+                            <span class="status status--warning">In Progress</span>
+                        </div>
+                        <div class="goal-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 12%"></div>
+                            </div>
+                            <span class="progress-text">12%</span>
+                        </div>
+                        <div class="goal-details">
+                            <p>Government bank exam preparation</p>
+                            <div class="goal-stats">
+                                <span>Target: 2h/day</span>
+                                <span>Current: Syllabus Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card" data-goal="youtube">
+                        <div class="goal-header">
+                            <h3>YouTube Channel</h3>
+                            <span class="status status--error">Behind</span>
+                        </div>
+                        <div class="goal-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 8%"></div>
+                            </div>
+                            <span class="progress-text">8%</span>
+                        </div>
+                        <div class="goal-details">
+                            <p>Grow YouTube channel from zero</p>
+                            <div class="goal-stats">
+                                <span>Target: 1.5h/day</span>
+                                <span>Current: Channel Setup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card" data-goal="health">
+                        <div class="goal-header">
+                            <h3>Health & Fitness</h3>
+                            <span class="status status--success">Good</span>
+                        </div>
+                        <div class="goal-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%"></div>
+                            </div>
+                            <span class="progress-text">20%</span>
+                        </div>
+                        <div class="goal-details">
+                            <p>Build muscle, quit smoking, improve health</p>
+                            <div class="goal-stats">
+                                <span>Target: 1h/day</span>
+                                <span>Current: Foundation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card" data-goal="confidence">
+                        <div class="goal-header">
+                            <h3>Confidence Building</h3>
+                            <span class="status status--success">Good</span>
+                        </div>
+                        <div class="goal-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="progress-text">25%</span>
+                        </div>
+                        <div class="goal-details">
+                            <p>Improve confidence, discipline, appearance</p>
+                            <div class="goal-stats">
+                                <span>Target: 0.5h/day</span>
+                                <span>Current: Daily Routines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card" data-goal="mma">
+                        <div class="goal-header">
+                            <h3>MMA Self-Defense</h3>
+                            <span class="status status--error">Behind</span>
+                        </div>
+                        <div class="goal-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 10%"></div>
+                            </div>
+                            <span class="progress-text">10%</span>
+                        </div>
+                        <div class="goal-details">
+                            <p>Learn MMA techniques for self-defense</p>
+                            <div class="goal-stats">
+                                <span>Target: 0.75h/day</span>
+                                <span>Current: Basic Striking</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Navigation Tabs -->
+                <nav class="tabs-nav">
+                    <button class="tab-btn active" data-tab="daily-tracking">Daily Tracking</button>
+                    <button class="tab-btn" data-tab="progress-charts">Progress Charts</button>
+                    <button class="tab-btn" data-tab="milestones">Milestones</button>
+                    <button class="tab-btn" data-tab="weekly-review">Weekly Review</button>
+                    <button class="tab-btn" data-tab="obstacles">Obstacles & Solutions</button>
+                    <button class="tab-btn" data-tab="analytics">Analytics</button>
+                </nav>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Daily Tracking -->
+                    <section id="daily-tracking" class="tab-panel active">
+                        <h2>Daily Tracking</h2>
+                        <div class="tracking-grid">
+                            <div class="card tracking-form">
+                                <div class="card__body">
+                                    <h3>Today's Activities</h3>
+                                    <form id="dailyTrackingForm">
+                                        <div class="form-group">
+                                            <label class="form-label">Work Hours (Food Delivery)</label>
+                                            <input type="number" class="form-control" id="workHours" min="0" max="12" step="0.5" placeholder="4.0">
+                                        </div>
+                                        
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label class="form-label">Data Science (hours)</label>
+                                                <input type="number" class="form-control" id="dsHours" min="0" max="8" step="0.25" placeholder="2.5">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Bank Exam (hours)</label>
+                                                <input type="number" class="form-control" id="bankHours" min="0" max="8" step="0.25" placeholder="2.0">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label class="form-label">YouTube Work (hours)</label>
+                                                <input type="number" class="form-control" id="youtubeHours" min="0" max="6" step="0.25" placeholder="1.5">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Workout (minutes)</label>
+                                                <input type="number" class="form-control" id="workoutMins" min="0" max="180" step="5" placeholder="45">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label class="form-label">Meditation (minutes)</label>
+                                                <input type="number" class="form-control" id="meditationMins" min="0" max="120" step="5" placeholder="10">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">MMA Training (minutes)</label>
+                                                <input type="number" class="form-control" id="mmaMins" min="0" max="120" step="5" placeholder="30">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label class="form-label">Cigarettes Smoked</label>
+                                                <input type="number" class="form-control" id="cigarettes" min="0" max="20" placeholder="0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Water Intake (glasses)</label>
+                                                <input type="number" class="form-control" id="waterIntake" min="0" max="20" placeholder="8">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label class="form-label">Sleep Hours</label>
+                                                <input type="number" class="form-control" id="sleepHours" min="0" max="12" step="0.5" placeholder="7">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Energy Level (1-10)</label>
+                                                <input type="number" class="form-control" id="energyLevel" min="1" max="10" placeholder="7">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Confidence Activities</label>
+                                            <div class="checkbox-group">
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" id="morningRoutine">
+                                                    <span class="checkmark"></span>
+                                                    Morning routine completed
+                                                </label>
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" id="grooming">
+                                                    <span class="checkmark"></span>
+                                                    Grooming & appearance
+                                                </label>
+                                                <label class="checkbox-item">
+                                                    <input type="checkbox" id="posture">
+                                                    <span class="checkmark"></span>
+                                                    Good posture practice
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn--primary btn--full-width">Save Today's Progress</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="card daily-summary">
+                                <div class="card__body">
+                                    <h3>Today's Summary</h3>
+                                    <div class="summary-stats">
+                                        <div class="summary-stat">
+                                            <span class="stat-value" id="totalStudyHours">0.0</span>
+                                            <span class="stat-label">Study Hours</span>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-value" id="goalCompletion">0%</span>
+                                            <span class="stat-label">Goal Completion</span>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-value" id="earnedToday">₹0</span>
+                                            <span class="stat-label">Earned Today</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="daily-reminders">
+                                        <h4>Today's Reminders</h4>
+                                        <ul id="remindersList">
+                                            <li>Complete Python basics module</li>
+                                            <li>Bank exam mock test</li>
+                                            <li>Record YouTube content</li>
+                                            <li>Evening workout session</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Progress Charts -->
+                    <section id="progress-charts" class="tab-panel">
+                        <h2>Progress Visualization</h2>
+                        <div class="charts-grid">
+                            <div class="card chart-card">
+                                <div class="card__body">
+                                    <h3>Weekly Progress Trends</h3>
+                                    <div class="chart-container" style="position: relative; height: 300px;">
+                                        <canvas id="progressChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card chart-card">
+                                <div class="card__body">
+                                    <h3>Study Hours Comparison</h3>
+                                    <div class="chart-container" style="position: relative; height: 300px;">
+                                        <canvas id="studyHoursChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card chart-card">
+                                <div class="card__body">
+                                    <h3>Health & Fitness Metrics</h3>
+                                    <div class="chart-container" style="position: relative; height: 300px;">
+                                        <canvas id="healthChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card chart-card">
+                                <div class="card__body">
+                                    <h3>Goal Completion Rate</h3>
+                                    <div class="chart-container" style="position: relative; height: 300px;">
+                                        <canvas id="completionChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Milestones -->
+                    <section id="milestones" class="tab-panel">
+                        <h2>Milestone Tracker</h2>
+                        <div class="milestones-grid" id="milestonesContainer">
+                            <!-- Milestone cards will be dynamically generated -->
+                        </div>
+                    </section>
+
+                    <!-- Weekly Review -->
+                    <section id="weekly-review" class="tab-panel">
+                        <h2>Weekly Review & Analysis</h2>
+                        <div class="review-grid">
+                            <div class="card review-summary">
+                                <div class="card__body">
+                                    <h3>This Week's Summary</h3>
+                                    <div class="review-stats">
+                                        <div class="review-stat">
+                                            <span class="stat-value">67%</span>
+                                            <span class="stat-label">Average Goal Completion</span>
+                                        </div>
+                                        <div class="review-stat">
+                                            <span class="stat-value">32.5h</span>
+                                            <span class="stat-label">Total Study Hours</span>
+                                        </div>
+                                        <div class="review-stat">
+                                            <span class="stat-value">₹2,100</span>
+                                            <span class="stat-label">Weekly Earnings</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card achievements">
+                                <div class="card__body">
+                                    <h3>🎉 This Week's Achievements</h3>
+                                    <ul class="achievement-list">
+                                        <li>Completed Python fundamentals course</li>
+                                        <li>Maintained workout streak for 5 days</li>
+                                        <li>Reduced smoking to 2 cigarettes/day</li>
+                                        <li>Created 2 YouTube videos</li>
+                                        <li>Earned ₹2,100 from delivery work</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card improvements">
+                                <div class="card__body">
+                                    <h3>📈 Areas for Improvement</h3>
+                                    <ul class="improvement-list">
+                                        <li>Increase YouTube content creation time</li>
+                                        <li>More consistent MMA training schedule</li>
+                                        <li>Better time management during delivery work</li>
+                                        <li>Earlier wake-up time for morning study</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card next-week">
+                                <div class="card__body">
+                                    <h3>🎯 Next Week's Priorities</h3>
+                                    <ul class="priority-list">
+                                        <li>Start data analysis projects</li>
+                                        <li>Begin reasoning practice for bank exam</li>
+                                        <li>Launch YouTube channel publicly</li>
+                                        <li>Add weight training to workout routine</li>
+                                        <li>Focus on communication skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Obstacles & Solutions -->
+                    <section id="obstacles" class="tab-panel">
+                        <h2>Obstacle & Solution Center</h2>
+                        <div class="obstacles-grid">
+                            <div class="card obstacle-card">
+                                <div class="card__body">
+                                    <h3>💰 Financial Constraints</h3>
+                                    <div class="obstacle-content">
+                                        <div class="issues">
+                                            <h4>Common Issues:</h4>
+                                            <ul>
+                                                <li>Limited money for courses and resources</li>
+                                                <li>Need to work long hours for survival</li>
+                                                <li>Can't afford gym membership or equipment</li>
+                                                <li>No budget for healthy food and supplements</li>
+                                            </ul>
+                                        </div>
+                                        <div class="solutions">
+                                            <h4>Solutions:</h4>
+                                            <ul>
+                                                <li>Use free resources: YouTube, Coursera audit, Khan Academy</li>
+                                                <li>Apply for scholarships and free programs</li>
+                                                <li>Bodyweight exercises at home, outdoor running</li>
+                                                <li>Budget meal planning with affordable nutritious options</li>
+                                                <li>Seek part-time remote work as skills improve</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card obstacle-card">
+                                <div class="card__body">
+                                    <h3>⏰ Time Management</h3>
+                                    <div class="obstacle-content">
+                                        <div class="issues">
+                                            <h4>Common Issues:</h4>
+                                            <ul>
+                                                <li>Long work hours for delivery job</li>
+                                                <li>Physical and mental fatigue after work</li>
+                                                <li>Multiple goals competing for time</li>
+                                                <li>Difficulty maintaining consistent schedule</li>
+                                            </ul>
+                                        </div>
+                                        <div class="solutions">
+                                            <h4>Solutions:</h4>
+                                            <ul>
+                                                <li>Wake up 1 hour earlier for focused study time</li>
+                                                <li>Use delivery breaks for audio learning</li>
+                                                <li>Time-block specific activities with strict boundaries</li>
+                                                <li>Prioritize high-impact activities first</li>
+                                                <li>Use micro-learning sessions (15-30 mins)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card obstacle-card">
+                                <div class="card__body">
+                                    <h3>🎓 Lack of Experience</h3>
+                                    <div class="obstacle-content">
+                                        <div class="issues">
+                                            <h4>Common Issues:</h4>
+                                            <ul>
+                                                <li>No prior knowledge in data science</li>
+                                                <li>Never prepared for competitive exams</li>
+                                                <li>No fitness or MMA background</li>
+                                                <li>Overwhelmed by amount to learn</li>
+                                            </ul>
+                                        </div>
+                                        <div class="solutions">
+                                            <h4>Solutions:</h4>
+                                            <ul>
+                                                <li>Start with absolute beginner courses</li>
+                                                <li>Find online study groups and mentors</li>
+                                                <li>Follow structured beginner-friendly programs</li>
+                                                <li>Document learning journey for motivation</li>
+                                                <li>Celebrate small wins and progress milestones</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card motivation-tips">
+                                <div class="card__body">
+                                    <h3>🚀 Emergency Motivation</h3>
+                                    <div class="motivation-content">
+                                        <div class="quick-tips">
+                                            <h4>When You Feel Like Giving Up:</h4>
+                                            <ul>
+                                                <li>Remember your family depends on your success</li>
+                                                <li>Visualize your life after achieving these goals</li>
+                                                <li>Look at your progress charts - you've come so far!</li>
+                                                <li>Think about the respect and financial freedom</li>
+                                                <li>You're investing in yourself - the best investment</li>
+                                            </ul>
+                                        </div>
+                                        <div class="mantras">
+                                            <h4>Daily Mantras:</h4>
+                                            <blockquote>
+                                                "Every hour I study today is an investment in my family's future."
+                                            </blockquote>
+                                            <blockquote>
+                                                "I am transforming my life, one day at a time."
+                                            </blockquote>
+                                            <blockquote>
+                                                "My current situation is temporary, but my goals are permanent."
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Analytics -->
+                    <section id="analytics" class="tab-panel">
+                        <h2>Analytics & Insights</h2>
+                        <div class="analytics-grid">
+                            <div class="card analytics-summary">
+                                <div class="card__body">
+                                    <h3>Monthly Summary</h3>
+                                    <div class="analytics-stats">
+                                        <div class="analytics-stat">
+                                            <span class="stat-value">142h</span>
+                                            <span class="stat-label">Total Study Hours</span>
+                                        </div>
+                                        <div class="analytics-stat">
+                                            <span class="stat-value">73%</span>
+                                            <span class="stat-label">Average Goal Completion</span>
+                                        </div>
+                                        <div class="analytics-stat">
+                                            <span class="stat-value">₹8,400</span>
+                                            <span class="stat-label">Monthly Earnings</span>
+                                        </div>
+                                        <div class="analytics-stat">
+                                            <span class="stat-value">18</span>
+                                            <span class="stat-label">Workout Days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card time-allocation">
+                                <div class="card__body">
+                                    <h3>Time Allocation Analysis</h3>
+                                    <div class="allocation-chart">
+                                        <div class="allocation-item">
+                                            <span class="allocation-label">Work (Delivery)</span>
+                                            <div class="allocation-bar">
+                                                <div class="allocation-fill" style="width: 50%"></div>
+                                            </div>
+                                            <span class="allocation-value">120h</span>
+                                        </div>
+                                        <div class="allocation-item">
+                                            <span class="allocation-label">Data Science</span>
+                                            <div class="allocation-bar">
+                                                <div class="allocation-fill" style="width: 25%"></div>
+                                            </div>
+                                            <span class="allocation-value">60h</span>
+                                        </div>
+                                        <div class="allocation-item">
+                                            <span class="allocation-label">Bank Exam</span>
+                                            <div class="allocation-bar">
+                                                <div class="allocation-fill" style="width: 20%"></div>
+                                            </div>
+                                            <span class="allocation-value">48h</span>
+                                        </div>
+                                        <div class="allocation-item">
+                                            <span class="allocation-label">YouTube</span>
+                                            <div class="allocation-bar">
+                                                <div class="allocation-fill" style="width: 15%"></div>
+                                            </div>
+                                            <span class="allocation-value">36h</span>
+                                        </div>
+                                        <div class="allocation-item">
+                                            <span class="allocation-label">Fitness & MMA</span>
+                                            <div class="allocation-bar">
+                                                <div class="allocation-fill" style="width: 12%"></div>
+                                            </div>
+                                            <span class="allocation-value">28h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card habit-tracking">
+                                <div class="card__body">
+                                    <h3>Habit Formation Progress</h3>
+                                    <div class="habits-list">
+                                        <div class="habit-item">
+                                            <span class="habit-name">Morning Routine</span>
+                                            <div class="habit-streak">
+                                                <span class="streak-number">18</span>
+                                                <span class="streak-label">day streak</span>
+                                            </div>
+                                            <div class="habit-progress">
+                                                <div class="habit-bar">
+                                                    <div class="habit-fill" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="habit-item">
+                                            <span class="habit-name">Daily Workout</span>
+                                            <div class="habit-streak">
+                                                <span class="streak-number">12</span>
+                                                <span class="streak-label">day streak</span>
+                                            </div>
+                                            <div class="habit-progress">
+                                                <div class="habit-bar">
+                                                    <div class="habit-fill" style="width: 60%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="habit-item">
+                                            <span class="habit-name">Smoke-Free Days</span>
+                                            <div class="habit-streak">
+                                                <span class="streak-number">7</span>
+                                                <span class="streak-label">day streak</span>
+                                            </div>
+                                            <div class="habit-progress">
+                                                <div class="habit-bar">
+                                                    <div class="habit-fill" style="width: 35%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="habit-item">
+                                            <span class="habit-name">Study Goals Met</span>
+                                            <div class="habit-streak">
+                                                <span class="streak-number">15</span>
+                                                <span class="streak-label">day streak</span>
+                                            </div>
+                                            <div class="habit-progress">
+                                                <div class="habit-bar">
+                                                    <div class="habit-fill" style="width: 70%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card recommendations">
+                                <div class="card__body">
+                                    <h3>🎯 AI Recommendations</h3>
+                                    <div class="recommendations-list">
+                                        <div class="recommendation-item">
+                                            <div class="recommendation-priority priority-high">High</div>
+                                            <div class="recommendation-content">
+                                                <h4>Increase YouTube Focus</h4>
+                                                <p>Your YouTube progress is behind schedule. Consider dedicating 30 minutes more daily to content creation.</p>
+                                            </div>
+                                        </div>
+                                        <div class="recommendation-item">
+                                            <div class="recommendation-priority priority-medium">Medium</div>
+                                            <div class="recommendation-content">
+                                                <h4>Optimize Study Schedule</h4>
+                                                <p>Your most productive study hours are 6-8 AM. Schedule your hardest subjects during this time.</p>
+                                            </div>
+                                        </div>
+                                        <div class="recommendation-item">
+                                            <div class="recommendation-priority priority-low">Low</div>
+                                            <div class="recommendation-content">
+                                                <h4>Add Recovery Days</h4>
+                                                <p>Your workout consistency is excellent. Consider adding 1 recovery day per week for better results.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

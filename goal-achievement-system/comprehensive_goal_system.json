@@ -1,0 +1,605 @@
+{
+  "goals": {
+    "Professional Goals": {
+      "data_science": {
+        "main_goal": "Data Science Learning for Freelance Work and Job",
+        "timeline": "6 months",
+        "milestones": [
+          {
+            "month": 1,
+            "milestone": "Complete Python and Statistics Fundamentals",
+            "target_hours": 80,
+            "key_skills": [
+              "Python basics",
+              "Pandas",
+              "NumPy",
+              "Statistics"
+            ]
+          },
+          {
+            "month": 2,
+            "milestone": "Master Data Analysis and Visualization",
+            "target_hours": 70,
+            "key_skills": [
+              "Matplotlib",
+              "Seaborn",
+              "Data cleaning",
+              "EDA"
+            ]
+          },
+          {
+            "month": 3,
+            "milestone": "Learn Machine Learning Basics",
+            "target_hours": 75,
+            "key_skills": [
+              "Scikit-learn",
+              "Regression",
+              "Classification",
+              "Model evaluation"
+            ]
+          },
+          {
+            "month": 4,
+            "milestone": "Build 3 Portfolio Projects",
+            "target_hours": 90,
+            "key_skills": [
+              "End-to-end projects",
+              "GitHub",
+              "Documentation",
+              "Presentation"
+            ]
+          },
+          {
+            "month": 5,
+            "milestone": "Start Freelancing and Job Applications",
+            "target_hours": 60,
+            "key_skills": [
+              "Resume building",
+              "Portfolio website",
+              "LinkedIn",
+              "Networking"
+            ]
+          },
+          {
+            "month": 6,
+            "milestone": "Secure First Client or Job Interview",
+            "target_hours": 50,
+            "key_skills": [
+              "Interview skills",
+              "Client communication",
+              "Proposal writing"
+            ]
+          }
+        ],
+        "daily_activities": [
+          "2 hours coding practice",
+          "1 hour theory study",
+          "30 min project work"
+        ],
+        "weekly_metrics": [
+          "Hours studied",
+          "Projects completed",
+          "Skills practiced",
+          "Applications sent"
+        ]
+      },
+      "bank_exams": {
+        "main_goal": "Government Bank Exam Preparation",
+        "timeline": "6 months",
+        "milestones": [
+          {
+            "month": 1,
+            "milestone": "Complete Syllabus Analysis and Basic Concepts",
+            "target_hours": 60,
+            "subjects": [
+              "Reasoning",
+              "Quantitative Aptitude",
+              "English",
+              "General Awareness"
+            ]
+          },
+          {
+            "month": 2,
+            "milestone": "Master Reasoning and Quantitative Aptitude",
+            "target_hours": 70,
+            "subjects": [
+              "Puzzles",
+              "Data Interpretation",
+              "Arithmetic"
+            ]
+          },
+          {
+            "month": 3,
+            "milestone": "Strengthen English and General Awareness",
+            "target_hours": 65,
+            "subjects": [
+              "Reading Comprehension",
+              "Current Affairs",
+              "Banking Awareness"
+            ]
+          },
+          {
+            "month": 4,
+            "milestone": "Intensive Mock Test Practice",
+            "target_hours": 80,
+            "subjects": [
+              "Full-length tests",
+              "Sectional tests",
+              "Time management"
+            ]
+          },
+          {
+            "month": 5,
+            "milestone": "Revision and Weak Area Focus",
+            "target_hours": 75,
+            "subjects": [
+              "Error analysis",
+              "Speed improvement",
+              "Accuracy enhancement"
+            ]
+          },
+          {
+            "month": 6,
+            "milestone": "Final Preparation and Exam Strategy",
+            "target_hours": 60,
+            "subjects": [
+              "Last-minute revision",
+              "Exam strategy",
+              "Stress management"
+            ]
+          }
+        ],
+        "daily_activities": [
+          "3 hours subject study",
+          "1 hour mock tests",
+          "30 min current affairs"
+        ],
+        "weekly_metrics": [
+          "Study hours",
+          "Mock test scores",
+          "Accuracy percentage",
+          "Speed improvement"
+        ]
+      },
+      "youtube_growth": {
+        "main_goal": "YouTube Channel Growth from Zero",
+        "timeline": "6 months",
+        "milestones": [
+          {
+            "month": 1,
+            "milestone": "Channel Setup and Content Strategy",
+            "target_videos": 8,
+            "focus": [
+              "Niche selection",
+              "Channel branding",
+              "First videos"
+            ]
+          },
+          {
+            "month": 2,
+            "milestone": "Consistent Content Creation",
+            "target_videos": 12,
+            "focus": [
+              "Content calendar",
+              "Video quality",
+              "SEO optimization"
+            ]
+          },
+          {
+            "month": 3,
+            "milestone": "Audience Building and Engagement",
+            "target_videos": 15,
+            "focus": [
+              "Community building",
+              "Social media promotion",
+              "Collaborations"
+            ]
+          },
+          {
+            "month": 4,
+            "milestone": "Monetization Preparation",
+            "target_videos": 15,
+            "focus": [
+              "1000 subscribers",
+              "4000 watch hours",
+              "Quality content"
+            ]
+          },
+          {
+            "month": 5,
+            "milestone": "Channel Optimization",
+            "target_videos": 18,
+            "focus": [
+              "Analytics review",
+              "Content improvement",
+              "Audience retention"
+            ]
+          },
+          {
+            "month": 6,
+            "milestone": "Monetization and Growth",
+            "target_videos": 20,
+            "focus": [
+              "Revenue generation",
+              "Brand partnerships",
+              "Channel expansion"
+            ]
+          }
+        ],
+        "daily_activities": [
+          "2 hours content creation",
+          "1 hour editing",
+          "30 min engagement"
+        ],
+        "weekly_metrics": [
+          "Videos uploaded",
+          "Views gained",
+          "Subscribers gained",
+          "Engagement rate"
+        ]
+      }
+    },
+    "Personal Goals": {
+      "confidence_discipline": {
+        "main_goal": "Improve Confidence, Discipline and Appearance",
+        "timeline": "6 months",
+        "milestones": [
+          {
+            "month": 1,
+            "milestone": "Establish Daily Routines and Self-Care",
+            "activities": [
+              "Morning routine",
+              "Grooming habits",
+              "Posture improvement"
+            ]
+          },
+          {
+            "month": 2,
+            "milestone": "Communication Skills Enhancement",
+            "activities": [
+              "Public speaking practice",
+              "Body language improvement",
+              "Social interaction"
+            ]
+          },
+          {
+            "month": 3,
+            "milestone": "Personal Style and Appearance",
+            "activities": [
+              "Wardrobe planning",
+              "Skincare routine",
+              "Personal grooming"
+            ]
+          },
+          {
+            "month": 4,
+            "milestone": "Assertiveness Training",
+            "activities": [
+              "Boundary setting",
+              "Confident communication",
+              "Decision making"
+            ]
+          },
+          {
+            "month": 5,
+            "milestone": "Leadership Skills Development",
+            "activities": [
+              "Team interaction",
+              "Presentation skills",
+              "Mentoring others"
+            ]
+          },
+          {
+            "month": 6,
+            "milestone": "Maintain Long-term Confidence",
+            "activities": [
+              "Self-evaluation",
+              "Continuous improvement",
+              "Goal setting"
+            ]
+          }
+        ],
+        "daily_activities": [
+          "Morning affirmations",
+          "Power poses",
+          "Social interaction practice"
+        ],
+        "weekly_metrics": [
+          "Confidence rating",
+          "Social interactions",
+          "Goals achieved",
+          "Appearance rating"
+        ]
+      },
+      "health_fitness": {
+        "main_goal": "Build Health & Fitness (Workout, Meditation, Skincare, Quit Smoking)",
+        "timeline": "6 months",
+        "milestones": [
+          {
+            "month": 1,
+            "milestone": "Establish Basic Fitness Foundation",
+            "activities": [
+              "Start bodyweight exercises",
+              "Quit smoking plan",
+              "Basic meditation"
+            ]
+          },
+          {
+            "month": 2,
+            "milestone": "Build Strength and Endurance",
+            "activities": [
+              "Structured workouts",
+              "Cardio routine",
+              "Smoking cessation support"
+            ]
+          },
+          {
+            "month": 3,
+            "milestone": "Advanced Fitness and Nutrition",
+            "activities": [
+              "Weight training",
+              "Proper nutrition plan",
+              "Skincare routine"
+            ]
+          },
+          {
+            "month": 4,
+            "milestone": "Muscle Building and Habit Formation",
+            "activities": [
+              "Progressive overload",
+              "Meal planning",
+              "Stress management"
+            ]
+          },
+          {
+            "month": 5,
+            "milestone": "Performance Optimization",
+            "activities": [
+              "Advanced exercises",
+              "Recovery protocols",
+              "Mental health focus"
+            ]
+          },
+          {
+            "month": 6,
+            "milestone": "Lifestyle Integration",
+            "activities": [
+              "Sustainable habits",
+              "Long-term planning",
+              "Health maintenance"
+            ]
+          }
+        ],
+        "daily_activities": [
+          "45 min workout",
+          "15 min meditation",
+          "Healthy meal prep",
+          "Skincare routine"
+        ],
+        "weekly_metrics": [
+          "Workout sessions",
+          "Weight progress",
+          "Meditation days",
+          "Smoke-free days"
+        ]
+      },
+      "mma_self_defense": {
+        "main_goal": "Learn MMA for Self-Defense",
+        "timeline": "6 months",
+        "milestones": [
+          {
+            "month": 1,
+            "milestone": "Basic Striking Fundamentals",
+            "techniques": [
+              "Jabs",
+              "Crosses",
+              "Basic kicks",
+              "Footwork"
+            ]
+          },
+          {
+            "month": 2,
+            "milestone": "Advanced Striking Combinations",
+            "techniques": [
+              "Hook punches",
+              "Uppercuts",
+              "Knee strikes",
+              "Elbow strikes"
+            ]
+          },
+          {
+            "month": 3,
+            "milestone": "Grappling and Ground Game Basics",
+            "techniques": [
+              "Takedowns",
+              "Ground positions",
+              "Basic submissions"
+            ]
+          },
+          {
+            "month": 4,
+            "milestone": "Self-Defense Applications",
+            "techniques": [
+              "Escape techniques",
+              "Counter-attacks",
+              "Situational awareness"
+            ]
+          },
+          {
+            "month": 5,
+            "milestone": "Sparring and Practice",
+            "techniques": [
+              "Light sparring",
+              "Defensive techniques",
+              "Conditioning"
+            ]
+          },
+          {
+            "month": 6,
+            "milestone": "Advanced Techniques and Confidence",
+            "techniques": [
+              "Advanced combinations",
+              "Fight strategy",
+              "Mental preparation"
+            ]
+          }
+        ],
+        "daily_activities": [
+          "30 min technique practice",
+          "20 min conditioning",
+          "10 min flexibility"
+        ],
+        "weekly_metrics": [
+          "Training hours",
+          "Techniques learned",
+          "Conditioning progress",
+          "Flexibility improvement"
+        ]
+      }
+    }
+  },
+  "schedule": {
+    "Monday": {
+      "morning": "Food delivery work (4 hours)",
+      "afternoon": "Data Science study (2 hours)",
+      "evening": "Workout + MMA practice (1 hour)"
+    },
+    "Tuesday": {
+      "morning": "Food delivery work (4 hours)",
+      "afternoon": "Bank exam prep (2 hours)",
+      "evening": "YouTube content creation (1.5 hours)"
+    },
+    "Wednesday": {
+      "morning": "Food delivery work (4 hours)",
+      "afternoon": "Data Science projects (2 hours)",
+      "evening": "Personal development + confidence building (1 hour)"
+    },
+    "Thursday": {
+      "morning": "Food delivery work (4 hours)",
+      "afternoon": "Bank exam mock tests (2 hours)",
+      "evening": "MMA training (1 hour)"
+    },
+    "Friday": {
+      "morning": "Food delivery work (4 hours)",
+      "afternoon": "YouTube editing + upload (2 hours)",
+      "evening": "Health & fitness focus (1 hour)"
+    },
+    "Saturday": {
+      "morning": "Extended study session - Data Science (3 hours)",
+      "afternoon": "Bank exam comprehensive review (2 hours)",
+      "evening": "YouTube planning + batch content (2 hours)"
+    },
+    "Sunday": {
+      "morning": "Weekly review and planning (1 hour)",
+      "afternoon": "Rest and recovery",
+      "evening": "Skill practice and personal time (2 hours)"
+    }
+  },
+  "obstacles": {
+    "Financial Constraints": {
+      "obstacles": [
+        "Limited money for courses",
+        "Need to work for survival",
+        "Can't afford gym membership"
+      ],
+      "solutions": [
+        "Use free resources (YouTube, Coursera audit, Khan Academy)",
+        "Schedule learning around work hours",
+        "Bodyweight exercises at home, free outdoor running",
+        "Apply for scholarships and free programs"
+      ]
+    },
+    "Time Management": {
+      "obstacles": [
+        "Long work hours for delivery",
+        "Fatigue after work",
+        "Multiple goals competing for time"
+      ],
+      "solutions": [
+        "Wake up 1 hour earlier for study",
+        "Use delivery breaks for audio learning",
+        "Prioritize high-impact activities",
+        "Time-block specific activities"
+      ]
+    },
+    "Lack of Experience": {
+      "obstacles": [
+        "No prior data science knowledge",
+        "Never prepared for exams",
+        "No fitness background"
+      ],
+      "solutions": [
+        "Start with absolute beginner courses",
+        "Find online study groups and mentors",
+        "Follow structured beginner programs",
+        "Document learning journey for motivation"
+      ]
+    },
+    "Physical Limitations": {
+      "obstacles": [
+        "No muscle mass",
+        "Belly fat",
+        "Smoking habit",
+        "Low energy"
+      ],
+      "solutions": [
+        "Start with light bodyweight exercises",
+        "Gradual smoking cessation plan",
+        "Focus on nutrition and sleep",
+        "Progressive overload in workouts"
+      ]
+    },
+    "Mental Barriers": {
+      "obstacles": [
+        "Low confidence",
+        "Overwhelm with multiple goals",
+        "Fear of failure"
+      ],
+      "solutions": [
+        "Start with small wins",
+        "Break goals into micro-steps",
+        "Positive affirmations daily",
+        "Celebrate small progress"
+      ]
+    }
+  },
+  "metrics": {
+    "daily_metrics": [
+      "Hours worked (delivery)",
+      "Study hours (Data Science)",
+      "Study hours (Bank exam)",
+      "YouTube work time",
+      "Workout duration",
+      "MMA practice time",
+      "Meditation minutes",
+      "Confidence building activities",
+      "Cigarettes smoked (to reduce)",
+      "Water intake",
+      "Sleep hours"
+    ],
+    "weekly_metrics": [
+      "Total study hours",
+      "Mock test scores",
+      "YouTube videos created",
+      "Workout sessions completed",
+      "Weight change",
+      "Skill assessments",
+      "Goal completion rate",
+      "Income from delivery work",
+      "Applications sent",
+      "Network connections made"
+    ],
+    "monthly_metrics": [
+      "Major milestones achieved",
+      "Portfolio projects completed",
+      "YouTube subscriber growth",
+      "Fitness benchmarks",
+      "Confidence rating (1-10)",
+      "Financial progress",
+      "Career opportunities created",
+      "Health improvements",
+      "Smoking reduction progress",
+      "Overall life satisfaction"
+    ]
+  }
+}
